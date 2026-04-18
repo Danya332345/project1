@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема 2: Деловая письменная речь в IT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #eef3f7;
+            padding: 2rem;
+            color: #1e2f3a;
+        }
+        @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 48px;
+            padding: 2rem;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.15);
+            animation: fadeSlide 0.6s ease-out;
+        }
+        .back-link {
+            display: inline-flex;
+            background: #eef2f5;
+            padding: 0.5rem 1.3rem;
+            border-radius: 60px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: 0.2s;
+        }
+        .section-block { margin-bottom: 2.2rem; border-left: 5px solid #2c7da0; padding-left: 1.5rem; }
+        .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: #0f4c5f; }
+        .code-snip { background: #1e2f3c; color: #e2eef5; padding: 1rem; border-radius: 24px; margin: 0.8rem 0; font-family: monospace; }
+        .badge-example { background: #eaf4f9; border-radius: 20px; padding: 0.8rem 1.2rem; margin: 0.8rem 0; }
+        footer { margin-top: 2rem; text-align: center; border-top: 1px solid #cde0e8; padding-top: 1.5rem; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← На главную</a>
+    <h1 style="margin-bottom: 1rem;">📄 Деловая письменная речь: от ТЗ до баг-репорта</h1>
+
+    <div class="section-block">
+        <div class="section-title">Жанры деловой письменности в разработке ПО</div>
+        <ul style="padding-left: 1.5rem;">
+            <li>Техническое задание (ТЗ) / Бизнес-требования (BRD)</li>
+            <li>Пользовательские истории (User Stories) и Use Cases</li>
+            <li>API-документация (OpenAPI, Swagger)</li>
+            <li>Баг-репорт (Bug report)</li>
+            <li>Pull Request description (описание изменений)</li>
+            <li>README, CONTRIBUTING, Changelog</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Структура технического задания (пример для ИС)</div>
+        <div class="code-snip">
+            <strong>1. Введение</strong> (цель, область действия)<br>
+            <strong>2. Общие требования</strong> (язык, платформа, производительность)<br>
+            <strong>3. Функциональные требования</strong> (Use case "Вход в систему")<br>
+            <strong>4. Нефункциональные требования</strong> (безопасность, масштабируемость)<br>
+            <strong>5. Состав документации</strong>
+        </div>
+        <p>Речевые клише: «Система должна обеспечивать...», «Предусмотреть возможность...», «Алгоритм реализуется согласно...».</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Правила оформления баг-репорта</div>
+        <ul style="padding-left: 1.5rem;">
+            <li><strong>Заголовок:</strong> кратко и ёмко (ошибка при авторизации с пустым паролем).</li>
+            <li><strong>Шаги воспроизведения:</strong> нумерованный список.</li>
+            <li><strong>Фактический результат:</strong> вылетает exception NullPointerException.</li>
+            <li><strong>Ожидаемый результат:</strong> сообщение «Пароль не может быть пустым».</li>
+            <li><strong>Окружение:</strong> ОС, браузер, версия сборки.</li>
+        </ul>
+        <div class="badge-example">
+            📌 <strong>Пример речевой формулы:</strong> «Воспроизводится на dev-стенде при вводе спецсимволов в поле поиска. Приоритет: высокий».
+        </div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Языковые клише для коммитов и PR</div>
+        <div class="code-snip">
+            feat: add user authentication endpoint<br>
+            fix: resolve memory leak in data processing<br>
+            docs: update README with setup guide<br>
+            refactor: extract validation logic to separate module
+        </div>
+        <p>Стандарт <strong>Conventional Commits</strong> повышает читаемость истории изменений.</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Этикет деловой переписки с заказчиком / тимлидом</div>
+        <ul style="padding-left: 1.5rem;">
+            <li>Тема письма должна отражать суть (например, «Уточнение требований к отчету за Q2»).</li>
+            <li>Приветствие и прощание обязательны (кроме быстрых чатов).</li>
+            <li>Не использовать caps lock и эмоциональные восклицания.</li>
+            <li>В ответах цитировать предыдущее сообщение фрагментарно.</li>
+        </ul>
+        <p>Для внешних заказчиков — официальный тон, для внутренней команды — допустим дружелюбный, но уважительный.</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Типичные ошибки в документации и как их избежать</div>
+        <ul style="padding-left: 1.5rem;">
+            <li>Двусмысленность: «быстрая загрузка» → «время ответа API менее 200 мс».</li>
+            <li>Избыточность: дублирование информации в нескольких местах.</li>
+            <li>Отсутствие версионирования документов.</li>
+            <li>Игнорирование целевой аудитории (писать для разработчиков иначе, чем для менеджеров).</li>
+        </ul>
+        <p>Рекомендация: использовать шаблоны и проверять документы через технического редактора.</p>
+    </div>
+    <footer>Деловая письменная речь: практические форматы для программиста</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема 1: Язык программиста и профессиональная коммуникация</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(145deg, #ecf3f8 0%, #dde7ef 100%);
+            padding: 2rem;
+            color: #1a2c3e;
+        }
+        @keyframes fadeSlide {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 48px;
+            padding: 2rem 2rem 2.5rem;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.2);
+            animation: fadeSlide 0.6s ease-out;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #eef2f5;
+            padding: 0.6rem 1.4rem;
+            border-radius: 60px;
+            text-decoration: none;
+            color: #1e5a6e;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            transition: 0.2s;
+        }
+        .back-link:hover { background: #dce6ec; transform: translateX(-4px); }
+        .section-block {
+            margin-bottom: 2.5rem;
+            border-left: 5px solid #2c7da0;
+            padding-left: 1.8rem;
+            transition: all 0.2s;
+        }
+        .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: #0f4c5f; letter-spacing: -0.3px; }
+        h3 { font-size: 1.4rem; color: #2c7da0; margin: 1.2rem 0 0.8rem; font-weight: 600; }
+        .list-styled { padding-left: 1.6rem; margin: 0.8rem 0; }
+        .list-styled li { margin: 0.5rem 0; }
+        .term { font-weight: 700; color: #1a6d8a; background: #e6f4fa; padding: 0.1rem 0.3rem; border-radius: 12px; }
+        .code-block {
+            background: #1e2f3c;
+            color: #cbdde6;
+            padding: 1rem 1.2rem;
+            border-radius: 24px;
+            font-family: 'Courier New', monospace;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        .grid-dict {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin: 1rem 0;
+        }
+        .dict-item {
+            background: #f0f6fa;
+            border-radius: 60px;
+            padding: 0.5rem 1.2rem;
+            font-size: 0.9rem;
+            font-weight: 500;
+            border: 1px solid #cde3ed;
+        }
+        footer { margin-top: 2rem; text-align: center; border-top: 1px solid #d4e2ea; padding-top: 1.8rem; color: #5f7f9a; }
+        @media (max-width: 700px) { body { padding: 1rem; } .section-title { font-size: 1.5rem; } }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← На главную</a>
+    <h1 style="font-size: 2.2rem; margin-bottom: 1rem;">🧑‍💻 Язык как средство профессиональной коммуникации в IT</h1>
+
+    <div class="section-block">
+        <div class="section-title">1. Определение (в контексте ИС и программирования)</div>
+        <p><span class="term">Язык профессиональной коммуникации</span> разработчика — это совокупность вербальных, письменных и символических средств (включая термины, жаргон, паттерны описания задач), используемых для обмена информацией в команде, при постановке задач, в документации и код-ревью. Он объединяет формальные языки (языки программирования) и естественный профессиональный язык.</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">2. Аспекты культуры речи для IT-специалиста</div>
+        <ul class="list-styled">
+            <li><span class="term">Нормативный аспект</span> — правильное использование технических терминов (не «скрипт написан на питоне», а «скрипт на Python»), соблюдение грамматики в баг-репортах.</li>
+            <li><span class="term">Коммуникативный аспект</span> — ясность в описании багов, структурированность в техническом задании, точность в комментариях к коду.</li>
+            <li><span class="term">Этический аспект</span> — уважительный тон в код-ревью, конструктивная критика, избегание обесценивания («это же элементарно»).</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">3. Языковые и речевые нормы в IT-среде</div>
+        <h3>Языковые нормы</h3>
+        <ul class="list-styled">
+            <li><span class="term">Лексические</span>: различие между «ошибка компиляции» и «ошибка времени выполнения», правильное употребление «деплой» / «релиз».</li>
+            <li><span class="term">Грамматические</span>: согласование в технической документации («приложение запускается», а не «приложение запускаються»).</li>
+            <li><span class="term">Стилистические</span>: в технической документации — официально-деловой и научный стиль; в чатах команды — допустим профессионализм.</li>
+        </ul>
+        <h3>Речевые нормы</h3>
+        <ul class="list-styled">
+            <li>Уместность: не использовать жаргон «сломать прод» в разговоре с заказчиком.</li>
+            <li>Логичность и краткость в описании issue (шаги воспроизведения, ожидаемый результат).</li>
+            <li>Чистота речи: избегать слов-паразитов в демо-презентациях.</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">4. Речевые формулы и этикет разработчика</div>
+        <p><strong>Типичные формулы в рабочих чатах (Slack, Teams):</strong></p>
+        <div class="code-block">
+            «Привет, коллеги! Заапрувьте PR #42, пожалуйста»<br>
+            «@тимлид, не могли бы вы уточнить требования к API?»<br>
+            «В рамках ревью: предлагаю вынести логику в отдельный сервис»<br>
+            «Извиняюсь за деплой в пятницу вечером, больше так не буду 😅»
+        </div>
+        <p><span class="term">Речевой этикет в IT:</span> обращение на «ты» в стартапах, на «вы» в крупных корпорациях (Sber, VK). Недопустимы личные оскорбления в ревью, обязательны объяснения «почему код плох», а не просто «плохо».</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">5. Терминология и профессиональная лексика программиста</div>
+        <p><span class="term">Терминология</span> — ядро профессионального языка. Примеры для ИС:</p>
+        <ul class="list-styled">
+            <li><strong>Бэкенд</strong>, <strong>фреймворк</strong> (Django, Spring), <strong>оркестрация</strong>, <strong>контейнеризация</strong>, <strong>микросервис</strong>.</li>
+            <li><strong>Профессионализмы</strong>: «закоммитить», «запушить», «замержить», «откатить на прод», «пофиксить баг».</li>
+            <li><strong>Жаргон</strong>: «легаси», «монстр», «велосипед», «котёл» (устаревший проект).</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">6. Язык специальности и отраслевые терминологические словари</div>
+        <p><span class="term">Язык специальности</span> в программировании включает не только термины, но и устойчивые конструкции (use case, sequence diagram, CI/CD pipeline). Важнейшие ресурсы:</p>
+        <div class="grid-dict">
+            <span class="dict-item">📘 Microsoft Terminology Collection</span>
+            <span class="dict-item">📗 Глоссарий IEEE (Software Engineering)</span>
+            <span class="dict-item">📙 Словарь терминов Oracle</span>
+            <span class="dict-item">📕 TechTerms.com</span>
+            <span class="dict-item">📔 Русскоязычный «Словарь программиста» (Хабр)</span>
+        </div>
+        <p>Рекомендуется вести персональный глоссарий новых терминов при изучении фреймворков.</p>
+        <div class="code-block">
+            // Пример терминологического стандарта: ГОСТ Р ИСО/МЭК 2382-2016 "Информационные технологии. Словарь"
+        </div>
+    </div>
+    <footer>Тема 1 адаптирована для специальности «Информационные системы и программирование»</footer>
+</div>
+</body>
+</html>

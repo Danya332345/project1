@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема 4: Межкультурная коммуникация в IT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #ecf2f7;
+            padding: 2rem;
+        }
+        @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 48px;
+            padding: 2rem;
+            box-shadow: 0 25px 40px -12px rgba(0,0,0,0.1);
+            animation: fadeSlide 0.6s ease;
+        }
+        .back-link { display: inline-flex; background: #eef2f5; padding: 0.5rem 1.2rem; border-radius: 60px; text-decoration: none; font-weight: 600; margin-bottom: 2rem; }
+        .section-block { margin-bottom: 2rem; border-left: 5px solid #2c7da0; padding-left: 1.5rem; }
+        .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: #0f4c5f; }
+        .culture-row { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+        .culture-card { background: #f8fafc; flex: 1; border-radius: 24px; padding: 1rem; border: 1px solid #cde3ed; transition: 0.2s; }
+        .culture-card:hover { transform: scale(1.02); background: #ffffff; }
+        footer { margin-top: 2rem; text-align: center; border-top: 1px solid #cde0e8; padding-top: 1.5rem; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← На главную</a>
+    <h1>🌐 Межкультурная коммуникация в распределённых IT-командах</h1>
+
+    <div class="section-block">
+        <div class="section-title">Особенности глобальной разработки</div>
+        <p>Современные ИС создаются командами из разных стран (Индия, США, Германия, Китай, Украина). Различия в стилях общения, иерархии, отношении к дедлайнам и обратной связи напрямую влияют на успех проекта.</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Модели культур применительно к IT</div>
+        <div class="culture-row">
+            <div class="culture-card"><strong>Индивидуализм (США)</strong> — прямое общение, быстрые решения, личная ответственность.</div>
+            <div class="culture-card"><strong>Коллективизм (Китай, Индия)</strong> — согласование с группой, уважение к старшим, избегание прямого «нет».</div>
+            <div class="culture-card"><strong>Высокий контекст (Япония)</strong> — много намёков, важны отношения, критика смягчается.</div>
+        </div>
+        <p>Влияние на код-ревью: азиатские разработчики реже возражают старшим, немцы требуют строгой документации, американцы ценят быстрое решение.</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Этикет в текстовых чатах (Slack, Teams, Discord)</div>
+        <ul style="padding-left: 1.5rem;">
+            <li>В международных чатах — английский, избегайте сленга, сокращений (np, lol) с коллегами, для которых английский не родной.</li>
+            <li>Используйте @channel только по делу. Уважайте часовые пояса — не пишите в 2 ночи, если нет критического инцидента.</li>
+            <li>В ответах подтверждайте получение информации (ack, понял, спасибо).</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Различия в проведении встреч (Daily, Planning)</div>
+        <ul style="padding-left: 1.5rem;">
+            <li><strong>Германия/Скандинавия</strong>: строго по времени, повестка, факты.</li>
+            <li><strong>Латинская Америка/Италия</strong>: более гибкое время, эмоциональность, обсуждение вне темы.</li>
+            <li><strong>Индия</strong>: частое согласие («yes», но не всегда означает выполнение) — важно переспрашивать и фиксировать в документах.</li>
+        </ul>
+        <div class="culture-card" style="margin-top: 0.8rem;">💡 Совет: записывайте все договорённости в issue tracker, не полагайтесь на устные обещания в мультикультурной среде.</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Речевые формулы и межкультурный этикет</div>
+        <p>Примеры адаптации:</p>
+        <ul style="padding-left: 1.5rem;">
+            <li>Вместо «Your code is wrong» → «I see a potential issue here, could we discuss alternative approach?»</li>
+            <li>Вместо «No, that won't work» → «That's an interesting idea, however we need to consider performance constraints.»</li>
+            <li>Обязательно используйте «please», «thank you», «appreciate» в переписке с коллегами из Азии.</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Инструменты для снижения барьеров</div>
+        <ul style="padding-left: 1.5rem;">
+            <li>DeepL / Google Translate для уточнения формулировок.</li>
+            <li>Глоссарии компании на нескольких языках.</li>
+            <li>Кросс-культурные тренинги (напр., от GitLab, Automattic).</li>
+            <li>Чёткие Definition of Done и шаблоны для коммуникации.</li>
+        </ul>
+        <p>Ключевое правило: <strong>культурная эмпатия и готовность учиться</strong>.</p>
+    </div>
+    <footer>Тема 4: успешная работа в глобальных командах разработки ПО</footer>
+</div>
+</body>
+</html>

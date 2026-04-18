@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тема 3: Публичные выступления разработчика</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #e2eaf1, #cfdfea);
+            padding: 2rem;
+        }
+        @keyframes fadeSlide { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            background: #ffffffdd;
+            backdrop-filter: blur(2px);
+            border-radius: 48px;
+            padding: 2rem;
+            box-shadow: 0 20px 35px rgba(0,0,0,0.1);
+            animation: fadeSlide 0.5s ease;
+        }
+        .back-link { display: inline-flex; background: #eef2f5; padding: 0.5rem 1.2rem; border-radius: 60px; text-decoration: none; font-weight: 600; margin-bottom: 2rem; }
+        .section-block { margin-bottom: 2rem; border-left: 5px solid #2c7da0; padding-left: 1.5rem; }
+        .section-title { font-size: 1.8rem; font-weight: 700; margin-bottom: 1rem; color: #1f5068; }
+        .tip-glow { background: linear-gradient(120deg, #eef3fc, #ffffff); border-radius: 32px; padding: 1rem; margin: 1rem 0; border: 1px solid #cde3ed; }
+        footer { margin-top: 2rem; text-align: center; border-top: 1px solid #c0d4e0; padding-top: 1.5rem; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <a href="index.html" class="back-link">← На главную</a>
+    <h1>🎙️ Публичные выступления: от стендапа до TechLead Talk</h1>
+
+    <div class="section-block">
+        <div class="section-title">Специфика выступлений в IT-среде</div>
+        <p>Разработчики часто выступают на ежедневных стендапах, ретроспективах, демо-днях, внутренних митапах и конференциях (HighLoad++, DotNext, TeamLead Conf). Требуется умение переключаться между технической глубиной и бизнес-ценностью.</p>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Структура технического доклада</div>
+        <ul style="padding-left: 1.5rem;">
+            <li><strong>Вступление:</strong> проблема, которую решает технология (заинтересуйте примером бага или архитектурной боли).</li>
+            <li><strong>Основная часть:</strong> архитектура, код, сравнение решений (с демонстрацией слайдов с фрагментами кода).</li>
+            <li><strong>Заключение:</strong> результаты (метрики, скорость, отзывы) + выводы.</li>
+        </ul>
+        <div class="tip-glow">💡 <strong>Совет:</strong> не читайте код со слайда — показывайте ключевые строки и объясняйте логику.</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Подготовка слайдов для программистов</div>
+        <ul style="padding-left: 1.5rem;">
+            <li>Используйте минималистичный дизайн (темная тема с моноширинным шрифтом).</li>
+            <li>Один слайд — одна мысль.</li>
+            <li>Диаграммы последовательностей (UML) и графики производительности вместо больших текстов.</li>
+            <li>Живые демо — только если интернет стабилен, иначе запишите видео.</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Как говорить с разной аудиторией</div>
+        <ul style="padding-left: 1.5rem;">
+            <li><strong>Для тимлидов и архитекторов:</strong> фокус на масштабируемость, риски, интеграции.</li>
+            <li><strong>Для джуниоров:</strong> больше объяснений, избегайте сложного жаргона без пояснений.</li>
+            <li><strong>Для бизнеса:</strong> показывайте ценность — время разработки, деньги, пользовательский опыт.</li>
+        </ul>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Риторические приёмы и работа с вопросами</div>
+        <p>Используйте «мостики»: «Как мы увидим далее...», «Это приводит нас к следующему пункту». На вопросы — техника «Повтори + ответь»: «Спасибо за вопрос о кэшировании. Действительно, мы используем Redis...».</p>
+        <div class="tip-glow">🎤 Пример удачного начала: «Представьте, что вы дежурите в субботу, и прод падает из-за утечки памяти. Как бы вы нашли причину за 15 минут?»</div>
+    </div>
+
+    <div class="section-block">
+        <div class="section-title">Борьба с волнением и невербалика</div>
+        <ul style="padding-left: 1.5rem;">
+            <li>Перед выступлением — дыхание по квадрату (вдох 4 сек — задержка 4 — выдох 4).</li>
+            <li>Не скрещивайте руки, смотрите на разных людей в зале.</li>
+            <li>Голос: варьируйте темп, делайте паузы после важных тезисов.</li>
+            <li>Репетируйте перед коллегами или записывайте себя на камеру.</li>
+        </ul>
+    </div>
+    <footer>Тема 3: ораторское искусство для IT-специалистов — от митапов до крупных конференций</footer>
+</div>
+</body>
+</html>
